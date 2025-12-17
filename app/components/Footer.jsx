@@ -40,7 +40,7 @@ export default function Footer() {
                     transition={{ duration: 0.5 }}
                 >
                     <h3 className="text-white text-lg font-semibold mb-3">Contact</h3>
-                    <ul className="space-y-2 text-gray-400 text-sm text-justify ml-30">
+                    <ul className="space-y-2 pl-30 text-gray-400 text-sm text-justify">
                         <li className="flex items-start gap-2">
                             <FontAwesomeIcon icon={faPhone} className="text-green-500 mt-1" />
                             +1 (000) 000-0000
