@@ -3,7 +3,7 @@ import { useState } from "react";
 import { motion, useAnimation } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
-import { faLinkedin, faXTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 export default function Navigation() {
   const [open, setOpen] = useState(false);
@@ -12,9 +12,10 @@ export default function Navigation() {
     <header className="fixed left-1/2 transform -translate-x-1/2 top-6 z-50 px-4 py-3 rounded-2xl w-[94%] max-w-6xl backdrop-blur-lg bg-white/30 border border-white/10 shadow-md">
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 text-lg rounded-full flex items-center justify-center bg-gradient-to-tr from-indigo-600 to-rose-500 text-white font-bold shadow">
-            VG
+          <div className="h-8 md:h-10 flex items-center overflow-visible">
+            <img src="/images/VG.png" alt="Workforce Partners" className="h-full w-auto object-contain scale-125 md:scale-200" />
           </div>
+
           <div className="hidden sm:block">
             <div className="text-lg font-semibold"> <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-rose-500">Visconto Group Inc.</span></div>
             <div className="text-xs ml-7 opacity-70 italic tracking-wide">Vision • Values • Versatility</div>
@@ -48,7 +49,7 @@ export default function Navigation() {
               <FontAwesomeIcon icon={faLinkedin} size="lg" className="text-blue-600" />
             </motion.a>
 
-            <motion.a
+            {/* <motion.a
               whileHover={{ scale: 1.15 }}
               className="cursor-pointer flex items-center justify-center"
               href="https://x.com/omnireachtech"
@@ -56,7 +57,7 @@ export default function Navigation() {
               rel="noopener noreferrer"
             >
               <FontAwesomeIcon icon={faXTwitter} size="lg" className="text-black" />
-            </motion.a>
+            </motion.a> */}
           </div>
         </nav>
 
@@ -85,7 +86,7 @@ export default function Navigation() {
               <FontAwesomeIcon icon={faLinkedin} size="lg" className="text-blue-600" />
             </motion.a>
 
-            <motion.a
+            {/* <motion.a
               whileHover={{ scale: 1.15 }}
               className="cursor-pointer flex items-center justify-center"
               href="https://x.com/omnireachtech"
@@ -93,7 +94,7 @@ export default function Navigation() {
               rel="noopener noreferrer"
             >
               <FontAwesomeIcon icon={faXTwitter} size="lg" className="text-black" />
-            </motion.a>
+            </motion.a> */}
           </div>
         </div>
       )}

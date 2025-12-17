@@ -22,8 +22,13 @@ export default function Footer() {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.4 }}
                 >
-                    <h2 className="text-xl font-bold text-white">Visconto Group Inc.</h2>
-                    <p className="text-gray-400 mt-3 item-start leading-relaxed">
+                    <div className="flex items-center gap-6">
+                        <div className="h-8 md:h-10 flex items-center overflow-visible">
+                            <img src="/images/VG.png" alt="Workforce Partners" className="h-full w-auto object-contain scale-125 md:scale-230" />
+                        </div>
+                        <h2 className="text-xl font-bold text-white">Visconto Group Inc.</h2>
+                    </div>
+                    <p className="mt-2 text-gray-400 leading-relaxed">
                         Building long-term workforce partnerships with trust, expertise, and data-driven hiring.
                     </p>
                 </motion.div>
@@ -35,16 +40,16 @@ export default function Footer() {
                     transition={{ duration: 0.5 }}
                 >
                     <h3 className="text-white text-lg font-semibold mb-3">Contact</h3>
-                    <ul className="space-y-3 text-gray-400 text-sm">
-                        <li className="flex justify-center items-start gap-2">
+                    <ul className="space-y-2 text-gray-400 text-sm text-justify ml-30">
+                        <li className="flex items-start gap-2">
                             <FontAwesomeIcon icon={faPhone} className="text-green-500 mt-1" />
                             +1 (000) 000-0000
                         </li>
-                        <li className="flex justify-center items-start gap-2">
+                        <li className="flex  items-start gap-2">
                             <FontAwesomeIcon icon={faEnvelope} className="text-yellow-500 mt-1" />
-                            hr@viscontogroup.com
+                            Hr@viscontogroup.com
                         </li>
-                        <li className="flex justify-center items-start gap-2">
+                        <li className="flex items-start gap-2">
                             <FontAwesomeIcon icon={faMapMarkerAlt} className="text-blue-500 mt-1" />
                             Toronto, Ontario, Canada
                         </li>
@@ -68,7 +73,7 @@ export default function Footer() {
                         >
                             <FontAwesomeIcon icon={faLinkedin} size="lg" className="text-blue-400" />
                         </motion.a>
-                        <motion.a
+                        {/* <motion.a
                             whileHover={{ scale: 1.15 }}
                             className="cursor-pointer flex items-center justify-center"
                             href="https://x.com/omnireachtech"
@@ -76,7 +81,7 @@ export default function Footer() {
                             rel="noopener noreferrer"
                         >
                             <FontAwesomeIcon icon={faXTwitter} size="lg" className="text-black-400" />
-                        </motion.a>
+                        </motion.a> */}
                     </div>
                 </motion.div>
             </div>
