@@ -13,7 +13,7 @@ export default function Home() {
         <div className="absolute -right-32 -bottom-32 w-[55vw] h-[55vw] rounded-full filter blur-3xl opacity-60 animate-blob animation-delay-2000 bg-gradient-to-br from-emerald-300 via-teal-400 to-cyan-500" />
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 lg:px-10">
+      <div className="max-w-[75rem] mx-auto px-6 lg:px-10">
         {/* HERO */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <motion.div
@@ -88,8 +88,7 @@ export default function Home() {
             Why Clients Choose <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-rose-500">Visconto Group Inc.</span>
           </h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[
-              { icon: faClock, title: "Speed to Hire", desc: "Qualified professionals delivered in days — not months." },
+            {[{ icon: faClock, title: "Speed to Hire", desc: "Qualified professionals delivered in days — not months." },
               { icon: faUsers, title: "Quality Over Quantity", desc: "Every candidate is pre-screened and skills verified." },
               { icon: faHandshake, title: "Flexible Engagement Models", desc: "Contract, contract-to-hire, or direct hire." },
               { icon: faDollarSign, title: "Cost Efficiency", desc: "Reduce hiring delays and turnover risk." },
@@ -101,23 +100,13 @@ export default function Home() {
                 whileHover="hover"
                 initial="rest"
                 variants={{
-                  rest: {
-                    y: 0,
-                    scale: 1,
-                    boxShadow: "0 10px 25px rgba(0,0,0,0.08)",
-                  },
-                  hover: {
-                    y: -14,
-                    scale: 1.04,
-                    boxShadow: "0 30px 70px rgba(0,0,0,0.25)",
-                  },
+                  rest: { y: 0, scale: 1, boxShadow: "0 10px 25px rgba(0,0,0,0.08)" },
+                  hover: { y: -14, scale: 1.04, boxShadow: "0 30px 70px rgba(0,0,0,0.25)" },
                 }}
                 transition={{ type: "spring", stiffness: 220, damping: 20 }}
                 style={{ transformStyle: "preserve-3d" }}
                 className="relative p-7 rounded-2xl bg-white/70 dark:bg-black/40 backdrop-blur border group overflow-hidden"
-              // className="p-6 rounded-2xl bg-white/70 dark:bg-black/40 backdrop-blur border group shadow hover:shadow-xl transition-shadow"
               >
-
                 <div className="w-12 h-12 flex mb-2 items-center justify-center rounded-xl bg-gradient-to-tr from-indigo-600 to-rose-500 text-white shadow-md">
                   <FontAwesomeIcon icon={item.icon} className="text-xl" />
                 </div>
@@ -140,8 +129,7 @@ export default function Home() {
           </h2>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              { icon: faUsers, title: "Contract Staffing", desc: "Scale your workforce instantly with experienced professionals." },
+            {[{ icon: faUsers, title: "Contract Staffing", desc: "Scale your workforce instantly with experienced professionals." },
               { icon: faUserTie, title: "Direct Hire & Executive Search", desc: "From senior developers to leaders who fit your culture." },
               { icon: faLayerGroup, title: "Project-Based Delivery", desc: "We assemble and manage teams for key initiatives." },
               { icon: faHandshake, title: "Workforce Consulting", desc: "Hiring strategy, compensation, planning, and retention." },
@@ -153,22 +141,13 @@ export default function Home() {
                 whileHover="hover"
                 initial="rest"
                 variants={{
-                  rest: {
-                    y: 0,
-                    scale: 1,
-                    boxShadow: "0 10px 25px rgba(0,0,0,0.08)",
-                  },
-                  hover: {
-                    y: -14,
-                    scale: 1.04,
-                    boxShadow: "0 30px 70px rgba(0,0,0,0.25)",
-                  },
+                  rest: { y: 0, scale: 1, boxShadow: "0 10px 25px rgba(0,0,0,0.08)" },
+                  hover: { y: -14, scale: 1.04, boxShadow: "0 30px 70px rgba(0,0,0,0.25)" },
                 }}
                 transition={{ type: "spring", stiffness: 220, damping: 20 }}
                 style={{ transformStyle: "preserve-3d" }}
                 className="relative p-7 rounded-2xl bg-white/70 dark:bg-black/40 backdrop-blur border group overflow-hidden"
               >
-
                 <div className="w-12 h-12 flex mb-2 items-center justify-center rounded-xl bg-gradient-to-tr from-indigo-600 to-rose-500 text-white shadow-md">
                   <FontAwesomeIcon icon={item.icon} className="text-xl group-hover:scale-110 transition-transform" />
                 </div>
@@ -179,7 +158,7 @@ export default function Home() {
           </div>
         </motion.div>
 
-        {/* INDUSTRIES  WE SERVE*/}
+        {/* INDUSTRIES WE SERVE */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -196,9 +175,8 @@ export default function Home() {
           </div>
 
           {/* INDUSTRY GRID WITH ICONS */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 max-w-7xl mx-auto perspective-[1800px">
-            {[
-              { name: "Technology", icon: faMicrochip },
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 max-w-[75rem] mx-auto perspective-[1800px]">
+            {[{ name: "Technology", icon: faMicrochip },
               { name: "Healthcare", icon: faBriefcaseMedical },
               { name: "Finance", icon: faDollarSign },
               { name: "Engineering", icon: faCogs },
@@ -255,8 +233,7 @@ export default function Home() {
           </h2>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              { step: "1", title: "Understand Your Business", desc: "We begin with your challenges — not a resume dump." },
+            {[{ step: "1", title: "Understand Your Business", desc: "We begin with your challenges — not a resume dump." },
               { step: "2", title: "Curate the Right Fit", desc: "Technical specialists pre-screen candidates for skill + team fit." },
               { step: "3", title: "Deliver & Support", desc: "Ongoing onboarding, performance follow-up, and retention support." },
             ].map((item, i) => (
@@ -267,9 +244,7 @@ export default function Home() {
                 transition={{ duration: 0.4, delay: i * 0.1 }}
                 viewport={{ once: true }}
                 className="p-8 text-center rounded-2xl bg-white/70 dark:bg-black/40 backdrop-blur border"
-              // className="p-8 text-center rounded-2xl bg-white dark:bg-[#0c1622] border border-slate-200 dark:border-slate-700"
               >
-                {/* <div className="text-4xl font-bold text-indigo-500 mb-3">{item.step}</div> */}
                 <motion.div
                   animate={{ y: [0, -8, 0] }}
                   transition={{

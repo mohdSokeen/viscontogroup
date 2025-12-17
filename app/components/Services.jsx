@@ -22,7 +22,6 @@ export default function Services() {
           scalability, and long-term success.
         </p>
 
-
         {/* Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-[75rem] mx-auto">
           {[
@@ -63,10 +62,10 @@ export default function Services() {
               }}
               transition={{ type: "spring", stiffness: 220, damping: 20 }}
               style={{ transformStyle: "preserve-3d" }}
-              className="p-6 rounded-2xl bg-white/70 dark:bg-black/40 backdrop-blur border group shadow hover:shadow-xl transition-shadow cursor-pointer"
+              className="p-6 rounded-2xl bg-white/70 dark:bg-black/40 backdrop-blur border group shadow hover:shadow-xl transition-shadow"
             >
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-gradient-to-tr from-indigo-600 to-rose-500 text-white shadow-md">
+                <div className="w-12 h-12 flex-shrink-0 flex items-center justify-center rounded-xl bg-gradient-to-tr from-indigo-600 to-rose-500 text-white shadow-md">
                   <FontAwesomeIcon icon={item.icon} className="text-xl group-hover:scale-110 transition-transform" />
                 </div>
                 <h3 className="font-semibold text-lg">{item.title}</h3>
@@ -127,7 +126,7 @@ export default function Services() {
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.2 }}
-        className="mt-10 text-center pb-25"
+        className="mt-10 text-center pb-20"
       >
         <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-rose-500">For Candidates</span>
