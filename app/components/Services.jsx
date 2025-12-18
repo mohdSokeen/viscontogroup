@@ -23,7 +23,7 @@ export default function Services() {
         </p>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-[75rem] mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-[70rem] mx-auto">
           {[
             {
               icon: faUsers, title: "Contract Staffing / Team Augmentation", desc: "Scale instantly with vetted professionals who integrate into your workflow.",
@@ -81,7 +81,7 @@ export default function Services() {
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.2 }}
-        className="max-w-[75rem] mx-auto mt-14 overflow-hidden rounded-xl border backdrop-blur bg-white/60 dark:bg-black/40 shadow"
+        className="max-w-[70rem] mx-auto mt-14 overflow-hidden rounded-xl border backdrop-blur bg-white/60 dark:bg-black/40 shadow"
       >
         <table className="w-full text-sm">
           <thead className="bg-slate-100 dark:bg-slate-700 text-slate-800 dark:text-slate-200">
