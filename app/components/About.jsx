@@ -2,6 +2,17 @@
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUsers, faClock, faShieldAlt, faHandshake } from "@fortawesome/free-solid-svg-icons";
+const logos = [
+  { name: "/images/Fortune.png" },
+  { name: "/images/AstraZeneca.png" },
+  { name: "/images/Marriott.png" },
+  { name: "/images/FannieMae.png" },
+  { name: "/images/L&T.png" },
+  { name: "/images/Berkadia.png" },
+  { name: "/images/Reddit.png" },
+  { name: "/images/EigenX.png" },
+  { name: "/images/KaiserPermanente.png" },
+];
 
 export default function About() {
   return (
@@ -96,29 +107,63 @@ export default function About() {
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="mt-12 text-center pb-50" id="contact">
+        className="mt-12 text-center mb-10"
+        id="contact"
+      >
         <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-rose-500">Let’s Build Something Great.</span>
+          <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-rose-500">
+            Let’s Build Something Great.
+          </span>
         </h2>
-        <p className="max-w-2xl mx-auto text-slate-600 dark:text-slate-300 mb-[-120px]">
+
+        <p className="max-w-2xl mx-auto text-slate-600 dark:text-slate-300">
           Whether you need one specialist or a full team, Visconto Group Inc. delivers talent that drives impact.
         </p>
       </motion.div>
 
-      {/* <motion.div
+      {/* LOGO SECTION */}
+      <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, delay: 0.4 }}
-        className="max-w-5xl mx-auto mt-20 text-center"
+        transition={{ duration: 0.6 }}
+        className="text-center mt-4"
       >
-        <motion.a
-          whileHover={{ scale: 1.07 }}
-          href="#contact"
-          className="inline-block px-10 py-4 text-lg font-semibold rounded-full bg-blue-600 text-white shadow-xl hover:bg-blue-700 transition"
+        <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-10">
+          <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-rose-500">
+            What Client Have To Say About Us
+          </span>
+        </h2>
+        <div
+          className="relative w-full overflow-hidden mb-15"
+          style={{
+            WebkitMaskImage:
+              "linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%)",
+            maskImage:
+              "linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%)",
+          }}
         >
-          Start a Partnership
-        </motion.a>
-      </motion.div> */}
+          <motion.div
+            className="flex items-center gap-16 whitespace-nowrap"
+            animate={{ x: [0, "-100%"] }}
+            transition={{
+              duration: 35,
+              ease: "linear",
+              repeat: Infinity,
+            }}
+          >
+            {[...logos, ...logos].map((logo, index) => (
+              <img
+                key={index}
+                src={logo.name}
+                alt="client logo"
+                className="h-12 w-auto opacity-70 hover:opacity-100 transition"
+              />
+            ))}
+          </motion.div>
+        </div>
+
+      </motion.div>
+
     </section>
   );
 }
