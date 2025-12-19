@@ -158,7 +158,7 @@ export default function About() {
                 src={logo.name}
                 alt="client logo"
                 // className="h-12 w-auto opacity-70 hover:opacity-100 transition"
-                className={`w-auto opacity-70 hover:opacity-100 transition ${logo.name.includes("Marriott") ? "h-20 md:h-24 scale-150" : "h-12"}`}
+                className={`w-auto opacity-70 hover:opacity-100 transition ${logo.name.includes("Marriott") ? "mt-[-17px] h-20 md:h-24 scale-150" : "h-12"}`}
               />
             ))}
           </motion.div>
