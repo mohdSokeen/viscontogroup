@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUsers, faClock, faShieldAlt, faHandshake } from "@fortawesome/free-solid-svg-icons";
+
 const logos = [
   { name: "/images/Fortune.png" },
   { name: "/images/AstraZeneca.png" },
@@ -143,7 +144,7 @@ export default function About() {
           }}
         >
           <motion.div
-            className="flex items-center gap-16 whitespace-nowrap"
+            className="flex gap-16 whitespace-nowrap"
             animate={{ x: [0, "-100%"] }}
             transition={{
               duration: 35,
@@ -156,7 +157,8 @@ export default function About() {
                 key={index}
                 src={logo.name}
                 alt="client logo"
-                className="h-12 w-auto opacity-70 hover:opacity-100 transition"
+                // className="h-12 w-auto opacity-70 hover:opacity-100 transition"
+                className={`w-auto opacity-70 hover:opacity-100 transition ${logo.name.includes("Marriott") ? "h-20 md:h-24 scale-150" : "h-12"}`}
               />
             ))}
           </motion.div>
