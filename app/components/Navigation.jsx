@@ -16,8 +16,8 @@ export default function Navigation() {
       {/* HEADER */}
       <header className="fixed left-1/2 -translate-x-1/2 top-6 z-50 px-4 py-3 rounded-2xl w-[94%] max-w-[85rem] backdrop-blur-lg bg-white/30 border border-white/10 shadow-md">
         <div className="flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <div className="h-8 md:h-10 flex items-center overflow-visible">
+          <div className="flex items-center gap-1 sm:gap-3">
+            <div className="h-12 sm:h-8 md:h-10 flex items-center overflow-visible">
               <img
                 src="/images/VG.png"
                 alt="Workforce Partners"
@@ -26,12 +26,12 @@ export default function Navigation() {
             </div>
 
             <div className="sm:block"> {/* hidden */}
-              <div className="text-lg font-semibold">
+              <div className="text-sm sm:text-lg font-semibold">
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-rose-500">
                   Visconto Group Inc.
                 </span>
               </div>
-              <div className="text-xs ml-7 opacity-70 italic tracking-wide">
+              <div className="text-[10px] sm:text-xs ml-7 sm:ml-7 opacity-70 italic tracking-wide">
                 Vision • Values • Versatility
               </div>
             </div>
