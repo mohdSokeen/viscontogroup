@@ -25,7 +25,7 @@ export default function Navigation() {
               />
             </div>
 
-            <div className="hidden sm:block">
+            <div className="sm:block"> {/* hidden */}
               <div className="text-lg font-semibold">
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-rose-500">
                   Visconto Group Inc.
