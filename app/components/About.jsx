@@ -48,14 +48,31 @@ const logos = [
   { name: "/images/Centene.png" },
   { name: "/images/United_Airlines.png" },
   { name: "/images/Tailored_Brands.png" },
+  { name: "/images/NYStateHealth.png" },
+  { name: "/images/IDCS.png" },
+  { name: "/images/Susquehanna.png" },
+  { name: "/images/Syntria.png" },
+  { name: "/images/Voloridge_health.png" },
+  { name: "/images/Titan_Wealth.png" },
+  { name: "/images/EPRI.png" },
+  { name: "/images/Convey_Health.png" },
 ];
+
+const half = Math.ceil(logos.length / 2);
+const firstRowLogos = logos.slice(0, half);
+const secondRowLogos = logos.slice(half);
+
 
 export default function About() {
   const x = useMotionValue(0);
-  const animationRef = useRef(null);
+  const x2 = useMotionValue(0);
+  const animationRef = useRef({
+    top: null,
+    bottom: null,
+  });
 
   useEffect(() => {
-    animationRef.current = animate(
+    animationRef.current.top = animate(
       x,
       ["0%", "-50%"],
       {
@@ -65,8 +82,23 @@ export default function About() {
       }
     );
 
-    return () => animationRef.current.stop();
-  }, [x]);
+    animationRef.current.bottom = animate(
+      x2,
+      ["-50%", "0%"], // right to left
+      {
+        duration: 30,
+        ease: "linear",
+        repeat: Infinity,
+      }
+    );
+
+    return () => {
+      animationRef.current.top?.stop();
+      animationRef.current.bottom?.stop();
+    };
+  }, [x, x2]);
+
+
 
   return (
     <section id="about" className="scroll-mt-35 px-6 md:px-20">
@@ -199,38 +231,83 @@ export default function About() {
           <motion.div
             className="flex w-max items-center"
             style={{ x }}
-            onMouseEnter={() => animationRef.current.pause()}
-            onMouseLeave={() => animationRef.current.play()}
+            onMouseEnter={() => animationRef.current.top.pause()}
+            onMouseLeave={() => animationRef.current.top.play()}
           >
-            {[...logos, ...logos].map((logo, index) => (
+            {[...firstRowLogos, ...firstRowLogos].map((logo, index) => (
               <div key={index} className="mx-6 md:mx-10 flex-shrink-0">
                 <img
                   src={logo.name}
                   alt="client logo"
                   className={`opacity-70 hover:opacity-100 transition 
                   ${logo.name.includes("Marriott")
-                      ? "h-16 md:h-20 scale-125 md:scale-150"
-                      : logo.name.includes("EigenX")
-                      ? "h-16 md:h-20 scale-75 md:scale-80"
-                      : logo.name.includes("SG")
-                      ? "h-16 md:h-20 scale-75 md:scale-85"
-                      : logo.name.includes("Scrum_Alliance")
-                      ? "h-16 md:h-20 scale-75 md:scale-80"
-                      : logo.name.includes("SMBC")
-                      ? "h-16 md:h-20 scale-75 md:scale-80"
-                      : logo.name.includes("NYS_Attorney_General")
-                      ? "h-16 md:h-20 scale-75 md:scale-80"
-                      : logo.name.includes("Amalgamated_Life")
-                      ? "h-16 md:h-20 scale-75 md:scale-80"
-                      : logo.name.includes("TXO_Partners")
-                      ? "h-16 md:h-20 scale-75 md:scale-80"
-                      : "h-10 md:h-12"
+                  ? "h-16 md:h-20 scale-125 md:scale-150"
+                  : logo.name.includes("EigenX")
+                  ? "h-16 md:h-20 scale-75 md:scale-80"
+                  : logo.name.includes("SG")
+                  ? "h-16 md:h-20 scale-75 md:scale-85"
+                  : logo.name.includes("Scrum_Alliance")
+                  ? "h-16 md:h-20 scale-75 md:scale-80"
+                  : logo.name.includes("SMBC")
+                  ? "h-16 md:h-20 scale-75 md:scale-80"
+                  : logo.name.includes("NYS_Attorney_General")
+                  ? "h-16 md:h-20 scale-75 md:scale-80"
+                  : logo.name.includes("Amalgamated_Life")
+                  ? "h-16 md:h-20 scale-75 md:scale-80"
+                  : logo.name.includes("TXO_Partners")
+                  ? "h-16 md:h-20 scale-75 md:scale-80"
+                  : "h-10 md:h-12"
                     }`}
                 />
               </div>
             ))}
           </motion.div>
         </div>
+        <div
+          className="relative w-full overflow-hidden mb-10"
+          style={{
+            WebkitMaskImage:
+              "linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%)",
+            maskImage:
+              "linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%)",
+          }}
+        >
+          <motion.div
+            className="flex w-max items-center"
+            style={{ x: x2 }}
+            onMouseEnter={() => animationRef.current.bottom.pause()}
+            onMouseLeave={() => animationRef.current.bottom.play()}
+          >
+            {[...secondRowLogos, ...secondRowLogos].map((logo, index) => (
+              <div key={index} className="mx-6 md:mx-10 flex-shrink-0">
+                <img
+                  src={logo.name}
+                  alt="client logo"
+                  className={`opacity-70 hover:opacity-100 transition 
+                    ${logo.name.includes("Syntria")
+                    ? "h-16 md:h-20 scale-125 md:scale-80"
+                    : logo.name.includes("Thermo_Fisher_Scientific")
+                    ? "h-16 md:h-20 scale-75 md:scale-85"
+                    : logo.name.includes("NYStateHealth")
+                    ? "h-16 md:h-20 scale-75 md:scale-115"
+                    : logo.name.includes("Convey_Health")
+                    ? "h-16 md:h-20 scale-75 md:scale-90"
+                    : logo.name.includes("Susquehanna")
+                    ? "h-16 md:h-20 scale-75 md:scale-100"
+                    : logo.name.includes("NYS_Attorney_General")
+                    ? "h-16 md:h-20 scale-75 md:scale-80"
+                    : logo.name.includes("GDIT")
+                    ? "h-16 md:h-20 scale-75 md:scale-100"
+                    : logo.name.includes("Amalgamated_Life")
+                    ? "h-16 md:h-20 scale-75 md:scale-80"
+                    : "h-10 md:h-12"
+                    }`}
+                />
+              </div>
+            ))}
+          </motion.div>
+        </div>
+
       </motion.div>
     </section>
   );
