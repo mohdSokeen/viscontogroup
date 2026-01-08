@@ -77,7 +77,7 @@ export default function About() {
       x,
       ["0%", "-50%"],
       {
-        duration: 40,
+        duration: 45,
         ease: "linear",
         repeat: Infinity,
       }
@@ -85,9 +85,9 @@ export default function About() {
 
     animationRef.current.bottom = animate(
       x2,
-      ["-50%", "0%"], // right to left
+      ["-50%", "0%"],
       {
-        duration: 40,
+        duration: 45,
         ease: "linear",
         repeat: Infinity,
       }
