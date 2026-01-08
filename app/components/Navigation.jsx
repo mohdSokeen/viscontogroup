@@ -11,7 +11,8 @@ export default function Navigation() {
   return (
     <>
       {/* MASK – hides content above header */}
-      <div className="fixed top-0 left-0 w-full h-[calc(2rem)] bg-white z-40 pointer-events-none" />
+      {/* <div className="fixed top-0 left-0 w-full h-[calc(2rem)] bg-white z-40 pointer-events-none" /> */}
+      <div className="fixed top-0 left-0 w-full h-[calc(2rem)] bg-white dark:bg-black z-40 pointer-events-none" />
 
       {/* HEADER */}
       {/* OLD header   <header className="fixed left-1/2 -translate-x-1/2 top-6 z-50 px-4 py-3 rounded-2xl w-[94%] max-w-[85rem] backdrop-blur-lg bg-white/30 border border-white/10 shadow-md"> */}
