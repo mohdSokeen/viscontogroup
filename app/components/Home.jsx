@@ -119,7 +119,7 @@ export default function Home() {
         </motion.div>
 
         {/* WHAT WE OFFER */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
@@ -156,7 +156,7 @@ export default function Home() {
               </motion.div>
             ))}
           </div>
-        </motion.div>
+        </motion.div> */}
 
         {/* INDUSTRIES WE SERVE */}
         <motion.div

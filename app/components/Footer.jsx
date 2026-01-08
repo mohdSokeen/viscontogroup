@@ -22,7 +22,7 @@ export default function Footer() {
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4 text-center lg:text-left">
-        
+
         {/* Logo Column */}
         <div className="flex justify-center lg:justify-start">
           <img
@@ -52,7 +52,7 @@ export default function Footer() {
           <ul className="space-y-3 text-sm">
             <li className="flex items-start gap-3 justify-center lg:justify-start">
               <FontAwesomeIcon icon={faPhone} className="text-green-500 mt-1" />
-              <span>+1 (000) 000-0000</span>
+              <span>267-753-8488</span>
             </li>
 
             <li className="flex items-start gap-3 justify-center lg:justify-start">
@@ -60,7 +60,7 @@ export default function Footer() {
                 icon={faEnvelope}
                 className="text-yellow-500 mt-1"
               />
-              <span>hr@viscontogroup.com</span>
+              <span>hr@omnireachtech.com</span>
             </li>
 
             <li className="flex items-start gap-3 justify-center lg:justify-start">
@@ -68,7 +68,7 @@ export default function Footer() {
                 icon={faMapMarkerAlt}
                 className="text-blue-500 mt-1"
               />
-              <span>Toronto, Ontario, Canada</span>
+              <span>308 Flint Rd, Langhorne, PA 19047, United States</span>
             </li>
           </ul>
         </div>
@@ -80,14 +80,15 @@ export default function Footer() {
           </h3>
 
           <div className="flex justify-center lg:justify-start">
-            <a
-              href="https://www.linkedin.com/company/omrtech/"
+            <motion.a
+              whileHover={{ scale: 1.15 }}
+              className="cursor-pointer"
+              href="https://www.linkedin.com/company/the-visconto-group-inc./"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-blue-600 transition"
             >
-              <FontAwesomeIcon icon={faLinkedin} />
-            </a>
+              <FontAwesomeIcon icon={faLinkedin} size="lg" className="text-blue-400" />
+            </motion.a>
           </div>
         </div>
       </div>

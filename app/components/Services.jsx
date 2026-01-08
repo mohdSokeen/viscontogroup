@@ -1,80 +1,51 @@
 "use client";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUsers, faBriefcase, faUserCheck, faLayerGroup, faCogs, faRocket } from "@fortawesome/free-solid-svg-icons";
+import { faUsers, faHandshake,faUserTie, faLayerGroup, faPeopleGroup, faClipboardCheck } from "@fortawesome/free-solid-svg-icons";
 
 export default function Services() {
 
   return (
     <section id="services" className="scroll-mt-35 px-6 md:px-20">
       {/* Header */}
-      <motion.div
-        initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, delay: 0.2 }}
-        className="text-center mb-12"
-      >
-        <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-rose-500">Services We Offer</span>
-        </h2>
-        <p className="mt-3 text-slate-600 dark:text-slate-300 max-w-4xl mx-auto text-lg mb-4">
-          A full spectrum of staffing and workforce solutions tailored for speed,
-          scalability, and long-term success.
-        </p>
+              <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="mt-8">
+          <h2 className="text-4xl font-bold text-center text-gray-900 dark:text-white mb-8">
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-rose-500">Services We Offer</span>
+          </h2>
 
-        {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-[70rem] mx-auto">
-          {[
-            {
-              icon: faUsers, title: "Contract Staffing / Team Augmentation", desc: "Scale instantly with vetted professionals who integrate into your workflow.",
-            },
-            {
-              icon: faBriefcase, title: "Direct Hire & Executive Search", desc: "We find culture-fit leaders and high-impact full-time talent.",
-            },
-            {
-              icon: faUserCheck, title: "Contract-to-Hire", desc: "Evaluate talent performance before committing to a long-term hire.",
-            },
-            {
-              icon: faLayerGroup, title: "Project-Based Delivery", desc: "Full project teams managed and delivered to meet tight deadlines.",
-            },
-            {
-              icon: faCogs, title: "Workforce Strategy Consulting", desc: "Proactive guidance on hiring, retention, compensation, and planning.",
-            },
-            {
-              icon: faRocket, title: "Recruitment Process Outsourcing (RPO)", desc: "We manage your full hiring pipeline — ideal for high-volume recruiting.",
-            },
-          ].map((item, index) => (
-            <motion.div
-              key={index}
-              whileHover="hover"
-              initial="rest"
-              variants={{
-                rest: {
-                  y: 0,
-                  scale: 1,
-                  boxShadow: "0 10px 25px rgba(0,0,0,0.08)",
-                },
-                hover: {
-                  y: -14,
-                  scale: 1.04,
-                  boxShadow: "0 30px 70px rgba(0,0,0,0.25)",
-                },
-              }}
-              transition={{ type: "spring", stiffness: 220, damping: 20 }}
-              style={{ transformStyle: "preserve-3d" }}
-              className="p-6 rounded-2xl bg-white/70 dark:bg-black/40 backdrop-blur border group shadow hover:shadow-xl transition-shadow"
-            >
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 flex-shrink-0 flex items-center justify-center rounded-xl bg-gradient-to-tr from-indigo-600 to-rose-500 text-white shadow-md">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[{ icon: faUsers, title: "Contract Staffing", desc: "Scale your workforce instantly with experienced professionals." },
+            { icon: faUserTie, title: "Direct Hire & Executive Search", desc: "From senior developers to leaders who fit your culture." },
+            { icon: faLayerGroup, title: "Project-Based Delivery", desc: "We assemble and manage teams for key initiatives." },
+            { icon: faHandshake, title: "Workforce Consulting", desc: "Hiring strategy, compensation, planning, and retention." },
+            { icon: faPeopleGroup, title: "Talent Pool Access", desc: "Priority access to 300,000+ vetted professionals." },
+            { icon: faClipboardCheck, title: "Managed Services / RPO", desc: "End-to-end recruitment management with defined SLAs and cost efficiency." },
+            ].map((item, i) => (
+              <motion.div
+                key={i}
+                whileHover="hover"
+                initial="rest"
+                variants={{
+                  rest: { y: 0, scale: 1, boxShadow: "0 10px 25px rgba(0,0,0,0.08)" },
+                  hover: { y: -14, scale: 1.04, boxShadow: "0 30px 70px rgba(0,0,0,0.25)" },
+                }}
+                transition={{ type: "spring", stiffness: 220, damping: 20 }}
+                style={{ transformStyle: "preserve-3d" }}
+                className="relative p-7 rounded-2xl bg-white/70 dark:bg-black/40 backdrop-blur border group overflow-hidden"
+              >
+                <div className="w-12 h-12 flex mb-2 items-center justify-center rounded-xl bg-gradient-to-tr from-indigo-600 to-rose-500 text-white shadow-md">
                   <FontAwesomeIcon icon={item.icon} className="text-xl group-hover:scale-110 transition-transform" />
                 </div>
-                <h3 className="font-semibold text-lg">{item.title}</h3>
-              </div>
-              <p className="text-sm opacity-80 mt-2 leading-relaxed">{item.desc}</p>
-            </motion.div>
-          ))}
-        </div>
-      </motion.div>
+                <h3 className="font-semibold text-xl">{item.title}</h3>
+                <p className="text-sm opacity-80">{item.desc}</p>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
 
       {/* Compact Table */}
       <motion.div

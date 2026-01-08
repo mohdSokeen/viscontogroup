@@ -15,8 +15,8 @@ export default function Navigation() {
       <div className="fixed top-0 left-0 w-full h-[calc(2rem)] bg-white dark:bg-black z-40 pointer-events-none" />
 
       {/* HEADER */}
-      {/* OLD header   <header className="fixed left-1/2 -translate-x-1/2 top-6 z-50 px-4 py-3 rounded-2xl w-[94%] max-w-[85rem] backdrop-blur-lg bg-white/30 border border-white/10 shadow-md"> */}
-      <header className=" fixed left-1/2 -translate-x-1/2 top-6 z-50  px-4 py-0.5 lg:px-6 lg:py-1  xl:px-8 xl:py-1.5  rounded-xl  w-[94%] max-w-6xl xl:max-w-7xl 2xl:max-w-[90rem] backdrop-blur-lg bg-white/30   border border-white/10 shadow-sm  scale-100 lg:scale-[1.05] xl:scale-[1.1] 2xl:scale-[1.15] origin-top">
+      <header className="fixed left-1/2 -translate-x-1/2 top-6 z-50 px-4 py-3 rounded-2xl w-[94%] max-w-[85rem] backdrop-blur-lg bg-white/30 border border-white/10 shadow-md">
+      {/* New  <header className=" fixed left-1/2 -translate-x-1/2 top-6 z-50  px-4 py-0.5 lg:px-6 lg:py-1  xl:px-8 xl:py-1.5  rounded-xl  w-[94%] max-w-6xl xl:max-w-7xl 2xl:max-w-[90rem] backdrop-blur-lg bg-white/30   border border-white/10 shadow-sm  scale-100 lg:scale-[1.05] xl:scale-[1.1] 2xl:scale-[1.15] origin-top"> */}
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-1 sm:gap-3">
             <div className="h-12 sm:h-8 md:h-10 flex items-center overflow-visible">
@@ -62,7 +62,7 @@ export default function Navigation() {
 
             <motion.a
               whileHover={{ scale: 1.15 }}
-              href="https://www.linkedin.com/company/omrtech/"
+              href="https://www.linkedin.com/company/the-visconto-group-inc./"
               target="_blank"
               rel="noopener noreferrer"
               className="cursor-pointer"
