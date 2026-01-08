@@ -11,10 +11,11 @@ export default function Navigation() {
   return (
     <>
       {/* MASK – hides content above header */}
-      <div className="fixed top-0 left-0 w-full h-[calc(2rem)] z-40 pointer-events-none" />
+      <div className="fixed top-0 left-0 w-full h-[calc(2rem)] bg-white z-40 pointer-events-none" />
 
       {/* HEADER */}
-      <header className="fixed left-1/2 -translate-x-1/2 top-6 z-50 px-4 py-3 rounded-2xl w-[94%] max-w-[85rem] backdrop-blur-lg bg-white/30 border border-white/10 shadow-md">
+      {/* OLD header   <header className="fixed left-1/2 -translate-x-1/2 top-6 z-50 px-4 py-3 rounded-2xl w-[94%] max-w-[85rem] backdrop-blur-lg bg-white/30 border border-white/10 shadow-md"> */}
+      <header className=" fixed left-1/2 -translate-x-1/2 top-6 z-50  px-4 py-0.5 lg:px-6 lg:py-1  xl:px-8 xl:py-1.5  rounded-xl  w-[94%] max-w-6xl xl:max-w-7xl 2xl:max-w-[90rem] backdrop-blur-lg bg-white/30   border border-white/10 shadow-sm  scale-100 lg:scale-[1.05] xl:scale-[1.1] 2xl:scale-[1.15] origin-top">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-1 sm:gap-3">
             <div className="h-12 sm:h-8 md:h-10 flex items-center overflow-visible">
@@ -48,6 +49,11 @@ export default function Navigation() {
               <span className="absolute left-0 -bottom-1 h-[2px] w-full bg-gradient-to-r from-indigo-500 to-rose-500 scale-x-0 group-hover:scale-x-100 transition-transform origin-left" />
             </a>
 
+            <a href="#testimonial" className="relative group opacity-70 font-bold">
+              Testimonial
+              <span className="absolute left-0 -bottom-1 h-[2px] w-full bg-gradient-to-r from-indigo-500 to-rose-500 scale-x-0 group-hover:scale-x-100 transition-transform origin-left" />
+            </a>
+
             <a href="#about" className="relative group opacity-70 font-bold">
               About
               <span className="absolute left-0 -bottom-1 h-[2px] w-full bg-gradient-to-r from-indigo-500 to-rose-500 scale-x-0 group-hover:scale-x-100 transition-transform origin-left" />
@@ -74,6 +80,7 @@ export default function Navigation() {
           <div className="mt-3 md:hidden bg-white/60 p-4 rounded-xl backdrop-blur-md border border-white/10">
             <a className="block py-2 font-bold" href="#home">Home</a>
             <a className="block py-2 font-bold" href="#services">Services</a>
+            <a className="block py-2 font-bold" href="#testimonial">Testimonial</a>
             <a className="block py-2 font-bold" href="#about">About</a>
           </div>
         )}

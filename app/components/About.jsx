@@ -56,6 +56,7 @@ const logos = [
   { name: "/images/Titan_Wealth.png" },
   { name: "/images/EPRI.png" },
   { name: "/images/Convey_Health.png" },
+  { name: "/images/Federal_Reserve.png" },
 ];
 
 const half = Math.ceil(logos.length / 2);
@@ -76,7 +77,7 @@ export default function About() {
       x,
       ["0%", "-50%"],
       {
-        duration: 30,
+        duration: 40,
         ease: "linear",
         repeat: Infinity,
       }
@@ -86,7 +87,7 @@ export default function About() {
       x2,
       ["-50%", "0%"], // right to left
       {
-        duration: 30,
+        duration: 40,
         ease: "linear",
         repeat: Infinity,
       }
@@ -213,12 +214,6 @@ export default function About() {
         transition={{ duration: 0.6 }}
         className="text-center mt-4"
       >
-        <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-10">
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-rose-500">
-            What Clients Have To Say About Us
-          </span>
-        </h2>
-
         <div
           className="relative w-full overflow-hidden mb-10"
           style={{

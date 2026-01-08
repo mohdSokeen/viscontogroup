@@ -89,11 +89,11 @@ export default function Home() {
           </h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[{ icon: faClock, title: "Speed to Hire", desc: "Qualified professionals delivered in days — not months." },
-              { icon: faUsers, title: "Quality Over Quantity", desc: "Every candidate is pre-screened and skills verified." },
-              { icon: faHandshake, title: "Flexible Engagement Models", desc: "Contract, contract-to-hire, or direct hire." },
-              { icon: faDollarSign, title: "Cost Efficiency", desc: "Reduce hiring delays and turnover risk." },
-              { icon: faShieldAlt, title: "Compliance & Reliability", desc: "We handle payroll, onboarding & labor regulations." },
-              { icon: faCircleCheck, title: "People Who Stay", desc: "Happier hires who perform better and stay longer." },
+            { icon: faUsers, title: "Quality Over Quantity", desc: "Every candidate is pre-screened and skills verified." },
+            { icon: faHandshake, title: "Flexible Engagement Models", desc: "Contract, contract-to-hire, or direct hire." },
+            { icon: faDollarSign, title: "Cost Efficiency", desc: "Reduce hiring delays and turnover risk." },
+            { icon: faShieldAlt, title: "Compliance & Reliability", desc: "We handle payroll, onboarding & labor regulations." },
+            { icon: faCircleCheck, title: "People Who Stay", desc: "Happier hires who perform better and stay longer." },
             ].map((item, i) => (
               <motion.div
                 key={i}
@@ -130,11 +130,11 @@ export default function Home() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[{ icon: faUsers, title: "Contract Staffing", desc: "Scale your workforce instantly with experienced professionals." },
-              { icon: faUserTie, title: "Direct Hire & Executive Search", desc: "From senior developers to leaders who fit your culture." },
-              { icon: faLayerGroup, title: "Project-Based Delivery", desc: "We assemble and manage teams for key initiatives." },
-              { icon: faHandshake, title: "Workforce Consulting", desc: "Hiring strategy, compensation, planning, and retention." },
-              { icon: faPeopleGroup, title: "Talent Pool Access", desc: "Priority access to 300,000+ vetted professionals." },
-              { icon: faClipboardCheck, title: "Managed Services / RPO", desc: "End-to-end recruitment management with defined SLAs and cost efficiency." },
+            { icon: faUserTie, title: "Direct Hire & Executive Search", desc: "From senior developers to leaders who fit your culture." },
+            { icon: faLayerGroup, title: "Project-Based Delivery", desc: "We assemble and manage teams for key initiatives." },
+            { icon: faHandshake, title: "Workforce Consulting", desc: "Hiring strategy, compensation, planning, and retention." },
+            { icon: faPeopleGroup, title: "Talent Pool Access", desc: "Priority access to 300,000+ vetted professionals." },
+            { icon: faClipboardCheck, title: "Managed Services / RPO", desc: "End-to-end recruitment management with defined SLAs and cost efficiency." },
             ].map((item, i) => (
               <motion.div
                 key={i}
@@ -177,15 +177,15 @@ export default function Home() {
           {/* INDUSTRY GRID WITH ICONS */}
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 max-w-[75rem] mx-auto perspective-[1800px]">
             {[{ name: "Technology", icon: faMicrochip },
-              { name: "Healthcare", icon: faBriefcaseMedical },
-              { name: "Finance", icon: faDollarSign },
-              { name: "Engineering", icon: faCogs },
-              { name: "Manufacturing", icon: faIndustry },
-              { name: "Retail", icon: faStore },
-              { name: "Telecom", icon: faSatelliteDish },
-              { name: "Public Sector", icon: faLandmark },
-              { name: "Startups", icon: faRocket },
-              { name: "Enterprise", icon: faBuilding },
+            { name: "Healthcare", icon: faBriefcaseMedical },
+            { name: "Finance", icon: faDollarSign },
+            { name: "Engineering", icon: faCogs },
+            { name: "Manufacturing", icon: faIndustry },
+            { name: "Retail", icon: faStore },
+            { name: "Telecom", icon: faSatelliteDish },
+            { name: "Public Sector", icon: faLandmark },
+            { name: "Startups", icon: faRocket },
+            { name: "Enterprise", icon: faBuilding },
             ].map((industry, i) => (
               <motion.div
                 key={i}
@@ -207,14 +207,20 @@ export default function Home() {
                   transformOrigin: "left center",
                   willChange: "transform",
                 }}
-                className="relative p-6 rounded-2xl bg-white/70 dark:bg-black/40 backdrop-blur border"
+                // className="relative p-6 rounded-2xl bg-white/70 dark:bg-black/40 backdrop-blur border"
+                className="relative p-6 rounded-2xl bg-white/70 dark:bg-black/40 backdrop-blur border min-h-[140px] overflow-hidden"
               >
-                <div className="flex flex-col sm:flex-row items-center sm:items-start gap-3 sm:gap-4 text-center sm:text-left">
+                {/* <div className="flex flex-col sm:flex-row items-center sm:items-start gap-3 sm:gap-4 text-center sm:text-left"> */}
+                <div className="flex flex-col items-center gap-3 text-center">
                   <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-gradient-to-tr from-indigo-600 to-rose-500 text-white shadow-md flex-shrink-0">
-                    <FontAwesomeIcon icon={industry.icon} className="text-xl group-hover:scale-110 transition-transform" />
+                    {/* <FontAwesomeIcon icon={industry.icon} className="text-xl group-hover:scale-110 transition-transform" /> */}
+                    <FontAwesomeIcon icon={industry.icon} className="text-xl transition-transform" />
                   </div>
-                  <div className="flex-1 text-sm font-semibold text-slate-700 dark:text-slate-200 break-words mt-3">
-                    {industry.name}
+                  {/* <div className="flex-1 text-x font-semibold text-slate-700 dark:text-slate-200 break-words mt-3"> */}
+                  <div className="text-m font-semibold mt-2 text-center whitespace-nowrap">
+                    <div className="max-w-[90%] leading-snug">
+                      {industry.name}
+                    </div>
                   </div>
                 </div>
               </motion.div>
@@ -234,8 +240,8 @@ export default function Home() {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {[{ step: "1", title: "Understand Your Business", desc: "We begin with your challenges — not a resume dump." },
-              { step: "2", title: "Curate the Right Fit", desc: "Technical specialists pre-screen candidates for skill + team fit." },
-              { step: "3", title: "Deliver & Support", desc: "Ongoing onboarding, performance follow-up, and retention support." },
+            { step: "2", title: "Curate the Right Fit", desc: "Technical specialists pre-screen candidates for skill + team fit." },
+            { step: "3", title: "Deliver & Support", desc: "Ongoing onboarding, performance follow-up, and retention support." },
             ].map((item, i) => (
               <motion.div
                 key={i}
