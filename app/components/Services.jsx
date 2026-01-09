@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUsers, faHandshake, faUserTie, faLayerGroup, faPeopleGroup, faClipboardCheck } from "@fortawesome/free-solid-svg-icons";
+import { faUsers, faHandshake, faUserTie, faLayerGroup, faPeopleGroup, faClipboardCheck, faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
 export default function Services() {
 
@@ -42,6 +42,8 @@ export default function Services() {
               </div>
               <h3 className="font-semibold text-xl">{item.title}</h3>
               <p className="text-sm opacity-80">{item.desc}</p>
+              {/* For Hover Effect */}
+              <span className="absolute inset-0 rounded-2xl bg-gradient-to-r from-indigo-500/10 to-rose-500/10 opacity-0 group-hover:opacity-100 transition" />
             </motion.div>
           ))}
         </div>
@@ -51,46 +53,76 @@ export default function Services() {
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, delay: 0.2 }}
-        className="max-w-[70rem] mx-auto mt-14 overflow-hidden rounded-xl border backdrop-blur bg-white/60 dark:bg-black/40 shadow"
+        transition={{ duration: 0.6 }}
+        className="max-w-[85rem] mx-auto mt-16 space-y-3"
       >
-        <table className="w-full text-sm">
-          <thead className="bg-slate-100 dark:bg-slate-700 text-slate-800 dark:text-slate-200">
-            <tr>
-              <th className="text-left p-4">Service</th>
-              <th className="text-left p-4">Description</th>
-              <th className="text-left p-4">Ideal For</th>
-            </tr>
-          </thead>
-          <tbody className="text-slate-700 dark:text-slate-300">
-            <tr className="border-t border-slate-300/40 dark:border-slate-600/40">
-              <td className="p-4">Contract Staffing</td>
-              <td className="p-4">Rapid access to qualified professionals for short & long-term needs.</td>
-              <td className="p-4">Fast-scaling companies or seasonal demand.</td>
-            </tr>
-            <tr className="border-t bg-white/40 dark:bg-black/30 border-slate-300/40 dark:border-slate-600/40">
-              <td className="p-4">Direct Hire / Permanent Staffing</td>
-              <td className="p-4">Full-cycle hiring for specialized or leadership roles.</td>
-              <td className="p-4">Organizations needing culture-fit long-term hires.</td>
-            </tr>
-            <tr className="border-t border-slate-300/40 dark:border-slate-600/40">
-              <td className="p-4">Contract-to-Hire</td>
-              <td className="p-4">Test talent on the job before hiring full-time.</td>
-              <td className="p-4">Teams reducing risk & optimizing cost.</td>
-            </tr>
-            <tr className="border-t bg-white/40 dark:bg-black/30 border-slate-300/40 dark:border-slate-600/40">
-              <td className="p-4">Project Staffing / Managed Teams</td>
-              <td className="p-4">Turnkey execution teams delivered on schedule.</td>
-              <td className="p-4">Businesses needing hands-on project delivery.</td>
-            </tr>
-            <tr className="border-t border-slate-300/40 dark:border-slate-600/40">
-              <td className="p-4">Workforce Strategy Consulting</td>
-              <td className="p-4">Expert guidance for hiring strategy & long-term planning.</td>
-              <td className="p-4">Organizations improving retention & workforce structure.</td>
-            </tr>
-          </tbody>
-        </table>
+        {[
+          {
+            title: "When Speed Matters",
+            desc: "Pre-vetted professionals available within days to support urgent delivery, backfills, or sudden scale-ups without compromising quality.",
+            ideal: "Companies facing tight deadlines or unexpected workload spikes",
+          },
+          {
+            title: "Building Long-Term Teams",
+            desc: "We help you hire people who align with your culture, leadership style, and long-term vision — not just skill checklists.",
+            ideal: "Organizations investing in sustainable growth",
+          },
+          {
+            title: "Reducing Hiring Risk",
+            desc: "Our engagement models allow you to evaluate performance, collaboration, and fit before making permanent hiring decisions.",
+            ideal: "Teams optimizing cost and minimizing hiring mistakes",
+          },
+          {
+            title: "End-to-End Project Execution",
+            desc: "From planning to delivery, we provide managed teams that take ownership of outcomes, timelines, and accountability.",
+            ideal: "Businesses lacking internal execution bandwidth",
+          },
+          {
+            title: "Strategic Workforce Planning",
+            desc: "Data-driven advisory on workforce design, role prioritization, compensation benchmarks, and retention planning.",
+            ideal: "Leadership teams preparing for scale or transformation",
+          },
+        ]
+          .map((item, i) => (
+            <motion.details
+              key={i}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4, delay: i * 0.05 }}
+              className="group rounded-xl border bg-white/60 dark:bg-black/40 backdrop-blur px-6 py-4"
+            >
+              <summary className="cursor-pointer list-none flex items-center justify-between">
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+                  {item.title}
+                </h3>
+                {/* <span className="text-sm opacity-60 group-open:rotate-180 transition">
+                  ↓
+                </span> */}
+                <FontAwesomeIcon
+                  icon={faChevronDown}
+                  className="text-sm text-slate-500 transition-transform duration-300 group-open:rotate-180"
+                />
+
+              </summary>
+
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.3 }}
+                className="mt-4 grid md:grid-cols-3 gap-6 text-sm text-slate-700 dark:text-slate-300"
+              >
+                <div className="md:col-span-2">
+                  {item.desc}
+                </div>
+                <div className="font-medium text-slate-900 dark:text-slate-200">
+                  {item.ideal}
+                </div>
+              </motion.div>
+            </motion.details>
+          ))}
       </motion.div>
+
+
 
       {/* Candidate Section */}
       <motion.div

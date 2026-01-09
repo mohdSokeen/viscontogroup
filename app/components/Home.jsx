@@ -33,7 +33,7 @@ export default function Home() {
 
             <div className="flex flex-wrap gap-4 justify-center">
               <a
-                href="https://mail.google.com/mail/?view=cm&fs=1&to=hr@omnireachtech.com&su=Recruitment%20Inquiry&body=Hello%20Omnireach%20Team%2C%0D%0A%0D%0AI%20would%20like%20to%20connect%20with%20you%20regarding%20recruitment%20opportunities%20and%20services.%0D%0A%0D%0APlease%20let%20me%20know%20a%20convenient%20time%20to%20discuss.%0D%0A%0D%0AThank%20you%2C%0D%0A%5BYour%20Name%5D"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=hr@omnireachtech.com&su=Recruitment%20Inquiry&body=Hello%20Visconto%20Group%20Team%2C%0D%0A%0D%0AI%20would%20like%20to%20connect%20with%20you%20regarding%20recruitment%20opportunities%20and%20services.%0D%0A%0D%0APlease%20let%20me%20know%20a%20convenient%20time%20to%20discuss.%0D%0A%0D%0AThank%20you%2C%0D%0A%5BYour%20Name%5D"
                 target="_blank"
                 className="px-20 py-3 rounded-xl bg-gradient-to-r from-indigo-600 to-rose-500 text-white font-semibold shadow-lg hover:opacity-90 transition">
                 Talk to a Recruitment Strategist
@@ -103,7 +103,7 @@ export default function Home() {
                   rest: { y: 0, scale: 1, boxShadow: "0 10px 25px rgba(0,0,0,0.08)" },
                   hover: { y: -14, scale: 1.04, boxShadow: "0 30px 70px rgba(0,0,0,0.25)" },
                 }}
-                transition={{ type: "spring", stiffness: 220, damping: 20 }}
+                transition={{ type: "spring", stiffness: 220, damping: 20 }}  
                 style={{ transformStyle: "preserve-3d" }}
                 className="relative p-7 rounded-2xl bg-white/70 dark:bg-black/40 backdrop-blur border group overflow-hidden"
               >
@@ -113,6 +113,7 @@ export default function Home() {
 
                 <h3 className="font-semibold text-lg">{item.title}</h3>
                 <p className="text-sm opacity-80">{item.desc}</p>
+              <span className="absolute inset-0 rounded-2xl bg-gradient-to-r from-indigo-500/10 to-rose-500/10 opacity-0 group-hover:opacity-100 transition" />
               </motion.div>
             ))}
           </div>

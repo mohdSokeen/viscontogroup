@@ -180,8 +180,7 @@ export default function About() {
           We invest in candidate relationships — offering guidance, transparent communication, and ongoing support. When candidates feel valued, clients see the results.
         </p>
         <a
-          // href="https://mail.google.com/mail/?view=cm&fs=1&to=mohdsokeen505@gmail.com"
-          href="https://mail.google.com/mail/?view=cm&fs=1&to=mohdsokeen505@gmail.com&su=Recruitment%20Inquiry&body=Hello%2C%0D%0A%0D%0AI%20would%20like%20to%20connect%20regarding%20recruitment%20services.%0D%0A%0D%0ARegards"
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=hr@omnireachtech.com&su=Recruitment%20Inquiry&body=Hello%20Visconto%20Group%20Team%2C%0D%0A%0D%0AI%20would%20like%20to%20connect%20with%20you%20regarding%20recruitment%20opportunities%20and%20services.%0D%0A%0D%0APlease%20let%20me%20know%20a%20convenient%20time%20to%20discuss.%0D%0A%0D%0AThank%20you%2C%0D%0A%5BYour%20Name%5D"
           target="_blank"
           className="inline-block mt-6 px-6 py-3 rounded-xl bg-gradient-to-r from-indigo-600 to-rose-500 text-white font-semibold shadow-lg hover:opacity-90 transition">
           Talk to a Recruitment Strategist
