@@ -13,7 +13,7 @@ export default function Home() {
         <div className="absolute -right-32 -bottom-32 w-[55vw] h-[55vw] rounded-full filter blur-3xl opacity-60 animate-blob animation-delay-2000 bg-gradient-to-br from-emerald-300 via-teal-400 to-cyan-500" />
       </div>
 
-      <div className="max-w-[75rem] mx-auto px-6 lg:px-10">
+      <div className="max-w-[90rem] mx-auto px-6 lg:px-10">
         {/* HERO */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <motion.div
@@ -169,13 +169,13 @@ export default function Home() {
             <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-3">
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-rose-500">Industries We Serve</span>
             </h2>
-            <p className="mt-3 text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
+            <p className="mt-3 text-slate-600 dark:text-slate-300 mx-auto">
               We help organizations hire top-tier professionals across multiple high‑growth sectors.
             </p>
           </div>
 
           {/* INDUSTRY GRID WITH ICONS */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 max-w-[75rem] mx-auto perspective-[1800px]">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 max-w-[90rem] mx-auto perspective-[1800px]">
             {[{ name: "Technology", icon: faMicrochip },
             { name: "Healthcare", icon: faBriefcaseMedical },
             { name: "Finance", icon: faDollarSign },

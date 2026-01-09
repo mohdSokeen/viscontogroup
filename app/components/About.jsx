@@ -107,12 +107,12 @@ export default function About() {
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="max-w-5xl mx-auto text-center"
+        className="text-center"
       >
         <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
           About <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-rose-500">Visconto Group Inc.</span>
         </h2>
-        <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed max-w-3xl mx-auto">
+        <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed max-w-4xl mx-auto">
           Visconto Group Inc. is a full-service staffing and workforce solutions company built on one belief — <strong>hiring should empower growth, not slow it down.</strong> We partner with organizations of every size to provide high-quality staffing solutions that align with business outcomes.
         </p>
       </motion.div>
@@ -121,7 +121,7 @@ export default function About() {
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.2 }}
-        className="grid md:grid-cols-2 gap-20 max-w-5xl mx-auto mt-16"
+        className="grid md:grid-cols-2 gap-20 max-w-[70rem] mx-auto mt-16"
       >
         <motion.div
           whileHover={{ scale: 1.03 }}
@@ -202,7 +202,7 @@ export default function About() {
           </span>
         </h2>
 
-        <p className="max-w-2xl mx-auto text-slate-600 dark:text-slate-300">
+        <p className="max-w-4xl mx-auto text-slate-600 dark:text-slate-300">
           Whether you need one specialist or a full team, Visconto Group Inc. delivers talent that drives impact.
         </p>
       </motion.div>

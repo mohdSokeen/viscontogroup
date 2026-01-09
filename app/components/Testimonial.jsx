@@ -66,7 +66,7 @@ export default function Testimonial() {
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
-                className="max-w-5xl mx-auto text-center mb-15"
+                className="text-center mb-15"
             >
                 <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-10">
                     <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-rose-500">
@@ -79,7 +79,7 @@ export default function Testimonial() {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.2 }}
                 >
-                    <div className="max-w-3xl mx-auto">
+                    <div className="max-w-[70rem] mx-auto">
                         <div className="relative overflow-hidden rounded-2xl bg-white/70 dark:bg-black/40 backdrop-blur border shadow-lg p-10 min-h-[240px] flex items-center justify-center text-center">
                             <AnimatePresence mode="wait">
                                 <motion.div

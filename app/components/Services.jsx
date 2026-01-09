@@ -1,51 +1,51 @@
 "use client";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUsers, faHandshake,faUserTie, faLayerGroup, faPeopleGroup, faClipboardCheck } from "@fortawesome/free-solid-svg-icons";
+import { faUsers, faHandshake, faUserTie, faLayerGroup, faPeopleGroup, faClipboardCheck } from "@fortawesome/free-solid-svg-icons";
 
 export default function Services() {
 
   return (
     <section id="services" className="scroll-mt-35 px-6 md:px-20">
       {/* Header */}
-              <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="mt-8">
-          <h2 className="text-4xl font-bold text-center text-gray-900 dark:text-white mb-8">
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-rose-500">Services We Offer</span>
-          </h2>
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.2 }}
+        className="mt-8">
+        <h2 className="text-4xl font-bold text-center text-gray-900 dark:text-white mb-8">
+          <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-rose-500">Services We Offer</span>
+        </h2>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[{ icon: faUsers, title: "Contract Staffing", desc: "Scale your workforce instantly with experienced professionals." },
-            { icon: faUserTie, title: "Direct Hire & Executive Search", desc: "From senior developers to leaders who fit your culture." },
-            { icon: faLayerGroup, title: "Project-Based Delivery", desc: "We assemble and manage teams for key initiatives." },
-            { icon: faHandshake, title: "Workforce Consulting", desc: "Hiring strategy, compensation, planning, and retention." },
-            { icon: faPeopleGroup, title: "Talent Pool Access", desc: "Priority access to 300,000+ vetted professionals." },
-            { icon: faClipboardCheck, title: "Managed Services / RPO", desc: "End-to-end recruitment management with defined SLAs and cost efficiency." },
-            ].map((item, i) => (
-              <motion.div
-                key={i}
-                whileHover="hover"
-                initial="rest"
-                variants={{
-                  rest: { y: 0, scale: 1, boxShadow: "0 10px 25px rgba(0,0,0,0.08)" },
-                  hover: { y: -14, scale: 1.04, boxShadow: "0 30px 70px rgba(0,0,0,0.25)" },
-                }}
-                transition={{ type: "spring", stiffness: 220, damping: 20 }}
-                style={{ transformStyle: "preserve-3d" }}
-                className="relative p-7 rounded-2xl bg-white/70 dark:bg-black/40 backdrop-blur border group overflow-hidden"
-              >
-                <div className="w-12 h-12 flex mb-2 items-center justify-center rounded-xl bg-gradient-to-tr from-indigo-600 to-rose-500 text-white shadow-md">
-                  <FontAwesomeIcon icon={item.icon} className="text-xl group-hover:scale-110 transition-transform" />
-                </div>
-                <h3 className="font-semibold text-xl">{item.title}</h3>
-                <p className="text-sm opacity-80">{item.desc}</p>
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
+        <div className="max-w-[85rem] mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {[{ icon: faUsers, title: "Contract Staffing", desc: "Scale your workforce instantly with experienced professionals." },
+          { icon: faUserTie, title: "Direct Hire & Executive Search", desc: "From senior developers to leaders who fit your culture." },
+          { icon: faLayerGroup, title: "Project-Based Delivery", desc: "We assemble and manage teams for key initiatives." },
+          { icon: faHandshake, title: "Workforce Consulting", desc: "Hiring strategy, compensation, planning, and retention." },
+          { icon: faPeopleGroup, title: "Talent Pool Access", desc: "Priority access to 300,000+ vetted professionals." },
+          { icon: faClipboardCheck, title: "Managed Services / RPO", desc: "End-to-end recruitment management with defined SLAs and cost efficiency." },
+          ].map((item, i) => (
+            <motion.div
+              key={i}
+              whileHover="hover"
+              initial="rest"
+              variants={{
+                rest: { y: 0, scale: 1, boxShadow: "0 10px 25px rgba(0,0,0,0.08)" },
+                hover: { y: -14, scale: 1.04, boxShadow: "0 30px 70px rgba(0,0,0,0.25)" },
+              }}
+              transition={{ type: "spring", stiffness: 220, damping: 20 }}
+              style={{ transformStyle: "preserve-3d" }}
+              className="relative p-7 rounded-2xl bg-white/70 dark:bg-black/40 backdrop-blur border group overflow-hidden"
+            >
+              <div className="w-12 h-12 flex mb-2 items-center justify-center rounded-xl bg-gradient-to-tr from-indigo-600 to-rose-500 text-white shadow-md">
+                <FontAwesomeIcon icon={item.icon} className="text-xl group-hover:scale-110 transition-transform" />
+              </div>
+              <h3 className="font-semibold text-xl">{item.title}</h3>
+              <p className="text-sm opacity-80">{item.desc}</p>
+            </motion.div>
+          ))}
+        </div>
+      </motion.div>
 
       {/* Compact Table */}
       <motion.div
@@ -103,11 +103,11 @@ export default function Services() {
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-rose-500">For Candidates</span>
         </h2>
         {/* <h3 className="text-3xl font-semibold">For Candidates</h3> */}
-        <p className="max-w-2xl mx-auto mt-3 text-slate-600 dark:text-slate-300">
+        <p className="max-w-3xl mx-auto mt-3 text-slate-600 dark:text-slate-300">
           We partner with professionals seeking meaningful career opportunities — not just contracts.
         </p>
 
-        <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+        <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-[80rem] mx-auto">
           {[
             "Exclusive access to top roles before they go public",
             "Clear communication & feedback at every stage",
