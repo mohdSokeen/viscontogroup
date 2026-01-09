@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faClock, faUsers, faDollarSign, faShieldAlt, faHandshake, faCircleCheck, faUserTie, faLayerGroup, faPeopleGroup, faMicrochip, faBriefcaseMedical, faCogs, faIndustry, faStore, faSatelliteDish, faLandmark, faRocket, faBuilding, faClipboardCheck } from "@fortawesome/free-solid-svg-icons";
+import { faClock, faUsers, faDollarSign, faShieldAlt, faHandshake, faCircleCheck, faMicrochip, faBriefcaseMedical, faCogs, faIndustry, faStore, faSatelliteDish, faLandmark, faRocket, faBuilding } from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
 
@@ -22,8 +22,8 @@ export default function Home() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-center mb-16"
           >
-            <h1 className="text-5xl sm:text-6xl font-extrabold leading-tight">
-              Build Stronger Teams. <br />
+            <h1 className="text-left text-5xl sm:text-6xl font-extrabold leading-tight whitespace-nowrap">
+              Build Stronger Teams<br />
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-rose-500">Faster Smarter</span>
             </h1>
 
