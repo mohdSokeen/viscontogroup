@@ -77,7 +77,7 @@ export default function About() {
       x,
       ["0%", "-50%"],
       {
-        duration: 45,
+        duration: 60,
         ease: "linear",
         repeat: Infinity,
       }
@@ -87,7 +87,7 @@ export default function About() {
       x2,
       ["-50%", "0%"],
       {
-        duration: 45,
+        duration: 60,
         ease: "linear",
         repeat: Infinity,
       }
