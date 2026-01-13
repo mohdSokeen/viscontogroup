@@ -22,7 +22,7 @@ export default function Home() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-center mb-16"
           >
-            <h1 className="text-left text-5xl sm:text-6xl font-extrabold leading-tight whitespace-nowrap">
+            <h1 className="text-left text-5xl sm:text-6xl font-extrabold leading-tight">
               Build Stronger Teams<br />
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-rose-500">Faster Smarter</span>
             </h1>
@@ -33,7 +33,7 @@ export default function Home() {
 
             <div className="flex flex-wrap gap-4 justify-center">
               <a
-                href="https://mail.google.com/mail/?view=cm&fs=1&to=hr@omnireachtech.com&su=Recruitment%20Inquiry&body=Hello%20Visconto%20Group%20Team%2C%0D%0A%0D%0AI%20would%20like%20to%20connect%20with%20you%20regarding%20recruitment%20opportunities%20and%20services.%0D%0A%0D%0APlease%20let%20me%20know%20a%20convenient%20time%20to%20discuss.%0D%0A%0D%0AThank%20you%2C%0D%0A%5BYour%20Name%5D"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=hr@viscontogroup.com&su=Recruitment%20Inquiry&body=Hello%20Visconto%20Group%20Team%2C%0D%0A%0D%0AI%20would%20like%20to%20connect%20with%20you%20regarding%20recruitment%20opportunities%20and%20services.%0D%0A%0D%0APlease%20let%20me%20know%20a%20convenient%20time%20to%20discuss.%0D%0A%0D%0AThank%20you%2C%0D%0A%5BYour%20Name%5D"
                 target="_blank"
                 className="px-20 py-3 rounded-xl bg-gradient-to-r from-indigo-600 to-rose-500 text-white font-semibold shadow-lg hover:opacity-90 transition">
                 Talk to a Recruitment Strategist

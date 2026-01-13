@@ -60,7 +60,7 @@ export default function Footer() {
                 icon={faEnvelope}
                 className="text-yellow-500 mt-1"
               />
-              <span>hr@omnireachtech.com</span>
+              <span>hr@viscontogroup.com</span>
             </li>
 
             <li className="flex items-start gap-3 justify-center lg:justify-start">
