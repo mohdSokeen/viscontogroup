@@ -1,8 +1,8 @@
 "use client";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPhone, faEnvelope, faMapMarkerAlt, faArrowUp } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { faPhone, faEnvelope, faMapMarkerAlt, faArrowUp} from "@fortawesome/free-solid-svg-icons";
 
 export default function Footer() {
   return (
@@ -16,69 +16,74 @@ export default function Footer() {
       />
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4 text-center lg:text-left">
+      <div className="relative z-10 max-w-7xl mx-auto grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
 
-        {/* Logo Column */}
-        <div className="flex justify-center lg:justify-start">
+        {/* Logo */}
+        <div className="flex justify-start">
           <img
             src="/images/VG.png"
             alt="Visconto Group"
-            className="h-22 md:h-26 w-auto object-contain"
+            className="h-20 w-auto object-contain"
           />
         </div>
 
         {/* Brand Info */}
-        <div>
+        <div className="text-left">
           <h2 className="text-lg font-semibold text-white">
             Visconto Group Inc.
           </h2>
-          <p className="mt-4 text-sm text-gray-400 leading-relaxed max-w-sm mx-auto lg:mx-0">
+          <p className="mt-4 text-sm text-gray-400 leading-relaxed max-w-sm">
             Building long-term workforce partnerships with trust, expertise,
             and data-driven hiring.
           </p>
         </div>
 
         {/* Contact */}
-        <div>
+        <div className="text-left">
           <h3 className="text-white text-base font-semibold mb-4">
             Contact
           </h3>
 
           <ul className="space-y-3 text-sm">
-            <li className="flex items-start gap-3 justify-center lg:justify-start">
-              <FontAwesomeIcon icon={faPhone} className="text-green-500 mt-1" />
+            <li className="flex items-start gap-3">
+              <FontAwesomeIcon
+                icon={faPhone}
+                className="text-green-500 mt-1 shrink-0"
+              />
               <span>267-753-8488</span>
             </li>
 
-            <li className="flex items-start gap-3 justify-center lg:justify-start">
+            <li className="flex items-start gap-3">
               <FontAwesomeIcon
                 icon={faEnvelope}
-                className="text-yellow-500 mt-1"
+                className="text-yellow-500 mt-1 shrink-0"
               />
-              <span>hr@viscontogroup.com</span>
+              <span className="break-all sm:break-normal">
+                hr@viscontogroup.com
+              </span>
             </li>
 
-            <li className="flex items-start gap-3 justify-center lg:justify-start">
+            <li className="flex items-start gap-3">
               <FontAwesomeIcon
                 icon={faMapMarkerAlt}
-                className="text-blue-500 mt-1"
+                className="text-blue-500 mt-1 shrink-0"
               />
-              <span>308 Flint Rd, Langhorne, PA 19047, United States</span>
+              <span className="leading-relaxed">
+                308 Flint Rd, Langhorne, PA 19047, US
+              </span>
             </li>
           </ul>
         </div>
 
         {/* Social */}
-        <div>
+        <div className="text-left">
           <h3 className="text-white text-base font-semibold mb-4">
             Follow Us
           </h3>
 
-          <div className="flex justify-center lg:justify-start gap-6">
-            {/* LinkedIn */}
+          <div className="flex gap-6">
             <motion.a
               whileHover={{ scale: 1.15 }}
-              className="cursor-pointer"
               href="https://www.linkedin.com/company/the-visconto-group-inc./"
               target="_blank"
               rel="noopener noreferrer"
@@ -91,10 +96,8 @@ export default function Footer() {
               />
             </motion.a>
 
-            {/* WhatsApp */}
             <motion.a
               whileHover={{ scale: 1.15 }}
-              className="cursor-pointer"
               href="https://wa.me/8126513033?text=Hello%20Visconto%20Group%20Team%2C%0A%0AI'm%20interested%20in%20connecting%20with%20you%20regarding%20recruitment%20opportunities%20and%20services.%0A%0APlease%20let%20me%20know%20a%20convenient%20time%20to%20discuss.%0A%0AThank%20you."
               target="_blank"
               rel="noopener noreferrer"
@@ -111,7 +114,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom Bar */}
-      <div className="relative z-10 max-w-7xl mx-auto mt-12 border-t border-gray-700 pt-5 text-center text-xs text-gray-500">
+      <div className="relative z-10 max-w-7xl mx-auto mt-12 border-t border-gray-700 pt-5 text-left text-xs text-gray-500">
         © {new Date().getFullYear()} Visconto Group Inc. All rights reserved.
       </div>
 

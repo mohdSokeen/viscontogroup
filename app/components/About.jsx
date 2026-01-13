@@ -112,7 +112,7 @@ export default function About() {
         <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
           About <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-rose-500">Visconto Group Inc.</span>
         </h2>
-        <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed max-w-4xl mx-auto">
+        <p className="mt-3 max-w-4xl mx-auto text-left sm:text-center text-gray-700 dark:text-gray-300 text-lg leading-relaxed">
           Visconto Group Inc. is a full-service staffing and workforce solutions company built on one belief — <strong>hiring should empower growth, not slow it down.</strong> We partner with organizations of every size to provide high-quality staffing solutions that align with business outcomes.
         </p>
       </motion.div>
@@ -176,7 +176,7 @@ export default function About() {
         <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-rose-500">A Word About Our Talent</span>
         </h2>
-        <p className="text-slate-700 dark:text-slate-300 leading-relaxed">
+        <p className="mt-3 max-w-4xl mx-auto text-left sm:text-center text-slate-700 dark:text-slate-300 leading-relaxed">
           We invest in candidate relationships — offering guidance, transparent communication, and ongoing support. When candidates feel valued, clients see the results.
         </p>
         <a
@@ -251,7 +251,7 @@ export default function About() {
                   : logo.name.includes("TXO_Partners")
                   ? "h-16 md:h-20 scale-75 md:scale-80"
                   : "h-10 md:h-12"
-                    }`}
+                  }`}
                 />
               </div>
             ))}
@@ -279,22 +279,22 @@ export default function About() {
                   alt="client logo"
                   className={`opacity-70 hover:opacity-100 transition 
                     ${logo.name.includes("Syntria")
-                    ? "h-16 md:h-20 scale-125 md:scale-80"
-                    : logo.name.includes("Thermo_Fisher_Scientific")
-                    ? "h-16 md:h-20 scale-75 md:scale-85"
-                    : logo.name.includes("NYStateHealth")
-                    ? "h-16 md:h-20 scale-75 md:scale-115"
-                    : logo.name.includes("Convey_Health")
-                    ? "h-16 md:h-20 scale-75 md:scale-90"
-                    : logo.name.includes("Susquehanna")
-                    ? "h-16 md:h-20 scale-75 md:scale-100"
-                    : logo.name.includes("NYS_Attorney_General")
-                    ? "h-16 md:h-20 scale-75 md:scale-80"
-                    : logo.name.includes("GDIT")
-                    ? "h-16 md:h-20 scale-75 md:scale-100"
-                    : logo.name.includes("Amalgamated_Life")
-                    ? "h-16 md:h-20 scale-75 md:scale-80"
-                    : "h-10 md:h-12"
+                      ? "h-16 md:h-20 scale-125 md:scale-80"
+                      : logo.name.includes("Thermo_Fisher_Scientific")
+                        ? "h-16 md:h-20 scale-75 md:scale-85"
+                        : logo.name.includes("NYStateHealth")
+                          ? "h-16 md:h-20 scale-75 md:scale-115"
+                          : logo.name.includes("Convey_Health")
+                            ? "h-16 md:h-20 scale-75 md:scale-90"
+                            : logo.name.includes("Susquehanna")
+                              ? "h-16 md:h-20 scale-75 md:scale-100"
+                              : logo.name.includes("NYS_Attorney_General")
+                                ? "h-16 md:h-20 scale-75 md:scale-80"
+                                : logo.name.includes("GDIT")
+                                  ? "h-16 md:h-20 scale-75 md:scale-100"
+                                  : logo.name.includes("Amalgamated_Life")
+                                    ? "h-16 md:h-20 scale-75 md:scale-80"
+                                    : "h-10 md:h-12"
                     }`}
                 />
               </div>

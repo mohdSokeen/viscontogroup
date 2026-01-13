@@ -13,7 +13,7 @@ export default function Home() {
         <div className="absolute -right-32 -bottom-32 w-[55vw] h-[55vw] rounded-full filter blur-3xl opacity-60 animate-blob animation-delay-2000 bg-gradient-to-br from-emerald-300 via-teal-400 to-cyan-500" />
       </div>
 
-      <div className="max-w-[90rem] mx-auto px-6 lg:px-10">
+      <div className="max-w-[75rem] mx-auto px-6 lg:px-10">
         {/* HERO */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <motion.div
@@ -22,24 +22,31 @@ export default function Home() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-center mb-16"
           >
-            <h1 className="text-left text-5xl sm:text-6xl font-extrabold leading-tight">
-              Build Stronger Teams<br />
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-rose-500">Faster Smarter</span>
+            <h1 className="text-left text-4xl sm:text-6xl font-extrabold leading-tight">
+              <span className="whitespace-nowrap">Build Stronger</span>{" "}
+              Teams{" "}
+              <span className="block bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-rose-500">
+                Faster Smarter
+              </span>
             </h1>
 
-            <p className="text-lg text-slate-700 dark:text-slate-300 max-w-xl pb-5 text-justify" >
-              Visconto Group Inc. helps companies of all sizes hire exceptional talent across technology, healthcare, finance, engineering, and more — without delays, risk, or overhead.
+            <p className="text-lg text-slate-700 dark:text-slate-300 max-w-xl pb-5 text-left">
+              Visconto Group Inc. helps companies of all sizes hire exceptional talent
+              across technology, healthcare, finance, engineering, and more — without
+              delays, risk, or overhead.
             </p>
 
-            <div className="flex flex-wrap gap-4 justify-center">
+            <div className="flex justify-center">
               <a
                 href="https://mail.google.com/mail/?view=cm&fs=1&to=hr@viscontogroup.com&su=Recruitment%20Inquiry&body=Hello%20Visconto%20Group%20Team%2C%0D%0A%0D%0AI%20would%20like%20to%20connect%20with%20you%20regarding%20recruitment%20opportunities%20and%20services.%0D%0A%0D%0APlease%20let%20me%20know%20a%20convenient%20time%20to%20discuss.%0D%0A%0D%0AThank%20you%2C%0D%0A%5BYour%20Name%5D"
                 target="_blank"
-                className="px-20 py-3 rounded-xl bg-gradient-to-r from-indigo-600 to-rose-500 text-white font-semibold shadow-lg hover:opacity-90 transition">
+                className="px-6 sm:px-12 lg:px-20 py-3 text-center rounded-xl bg-gradient-to-r from-indigo-600 to-rose-500 text-white font-semibold shadow-lg hover:opacity-90 transition max-w-full"
+              >
                 Talk to a Recruitment Strategist
               </a>
             </div>
           </motion.div>
+
 
           {/* IMAGE CARD */}
           <motion.div
@@ -84,9 +91,13 @@ export default function Home() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
           className="mt-10" id="why">
-          <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-8 text-center">
-            Why Clients Choose <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-rose-500">Visconto Group Inc.</span>
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-8 text-center leading-tight">
+            Why Clients Choose{" "}
+            <span className="block sm:inline bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-rose-500 whitespace-nowrap">
+              Visconto Group Inc.
+            </span>
           </h2>
+
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[{ icon: faClock, title: "Speed to Hire", desc: "Qualified professionals delivered in days — not months." },
             { icon: faUsers, title: "Quality Over Quantity", desc: "Every candidate is pre-screened and skills verified." },
@@ -103,7 +114,7 @@ export default function Home() {
                   rest: { y: 0, scale: 1, boxShadow: "0 10px 25px rgba(0,0,0,0.08)" },
                   hover: { y: -14, scale: 1.04, boxShadow: "0 30px 70px rgba(0,0,0,0.25)" },
                 }}
-                transition={{ type: "spring", stiffness: 220, damping: 20 }}  
+                transition={{ type: "spring", stiffness: 220, damping: 20 }}
                 style={{ transformStyle: "preserve-3d" }}
                 className="relative p-7 rounded-2xl bg-white/70 dark:bg-black/40 backdrop-blur border group overflow-hidden"
               >
@@ -113,7 +124,7 @@ export default function Home() {
 
                 <h3 className="font-semibold text-lg">{item.title}</h3>
                 <p className="text-sm opacity-80">{item.desc}</p>
-              <span className="absolute inset-0 rounded-2xl bg-gradient-to-r from-indigo-500/10 to-rose-500/10 opacity-0 group-hover:opacity-100 transition" />
+                <span className="absolute inset-0 rounded-2xl bg-gradient-to-r from-indigo-500/10 to-rose-500/10 opacity-0 group-hover:opacity-100 transition" />
               </motion.div>
             ))}
           </div>
@@ -170,7 +181,7 @@ export default function Home() {
             <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-3">
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-rose-500">Industries We Serve</span>
             </h2>
-            <p className="mt-3 text-slate-600 dark:text-slate-300 mx-auto">
+            <p className="mt-3 max-w-3xl text-left sm:text-center text-slate-600 dark:text-slate-300 mx-auto leading-relaxed">
               We help organizations hire top-tier professionals across multiple high‑growth sectors.
             </p>
           </div>
