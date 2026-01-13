@@ -1,13 +1,8 @@
 "use client";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faPhone,
-  faEnvelope,
-  faMapMarkerAlt,
-  faArrowUp,
-} from "@fortawesome/free-solid-svg-icons";
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faPhone, faEnvelope, faMapMarkerAlt, faArrowUp } from "@fortawesome/free-solid-svg-icons";
+import { faLinkedin, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
 export default function Footer() {
   return (
@@ -79,15 +74,37 @@ export default function Footer() {
             Follow Us
           </h3>
 
-          <div className="flex justify-center lg:justify-start">
+          <div className="flex justify-center lg:justify-start gap-6">
+            {/* LinkedIn */}
             <motion.a
               whileHover={{ scale: 1.15 }}
               className="cursor-pointer"
               href="https://www.linkedin.com/company/the-visconto-group-inc./"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Visconto Group on LinkedIn"
             >
-              <FontAwesomeIcon icon={faLinkedin} size="lg" className="text-blue-400" />
+              <FontAwesomeIcon
+                icon={faLinkedin}
+                size="lg"
+                className="text-blue-500 hover:text-blue-600 transition"
+              />
+            </motion.a>
+
+            {/* WhatsApp */}
+            <motion.a
+              whileHover={{ scale: 1.15 }}
+              className="cursor-pointer"
+              href="https://wa.me/8126513033?text=Hello%20Visconto%20Group%20Team%2C%0A%0AI'm%20interested%20in%20connecting%20with%20you%20regarding%20recruitment%20opportunities%20and%20services.%0A%0APlease%20let%20me%20know%20a%20convenient%20time%20to%20discuss.%0A%0AThank%20you."
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Chat with Visconto Group on WhatsApp"
+            >
+              <FontAwesomeIcon
+                icon={faWhatsapp}
+                size="lg"
+                className="text-green-500 hover:text-green-600 transition"
+              />
             </motion.a>
           </div>
         </div>
