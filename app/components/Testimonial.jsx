@@ -66,7 +66,7 @@ export default function Testimonial() {
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
-                className="text-center mb-15"
+                className="text-center "
             >
                 <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-10">
                     <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-rose-500">

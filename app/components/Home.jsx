@@ -20,7 +20,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-center mb-16"
+            className="text-center mb-6"
           >
             <h1 className="text-left text-4xl sm:text-6xl font-extrabold leading-tight">
               <span className="whitespace-nowrap">Build Stronger</span>{" "}
@@ -53,7 +53,7 @@ export default function Home() {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.7 }}
-            className="relative flex items-center justify-center pb-5"
+            className="relative flex items-center justify-center"
           >
             <div className="w-full max-w-md lg:max-w-lg">
               <div className="rounded-3xl p-1 bg-white/30 dark:bg-black/30 backdrop-blur-xl border border-white/10 shadow-2xl">
@@ -175,7 +175,7 @@ export default function Home() {
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="mt-16" id="industries"
+          className="mt-8" id="industries"
         >
           <div className="text-center mb-5">
             <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-3">
@@ -245,7 +245,7 @@ export default function Home() {
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="mt-10" id="process">
+          className="mt-7" id="process">
           <h2 className="text-4xl font-bold text-center text-gray-900 dark:text-white mb-8">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-rose-500">How We Work</span>
           </h2>

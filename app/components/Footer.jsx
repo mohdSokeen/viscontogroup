@@ -98,7 +98,7 @@ export default function Footer() {
 
             <motion.a
               whileHover={{ scale: 1.15 }}
-              href="https://wa.me/8126513033?text=Hello%20Visconto%20Group%20Team%2C%0A%0AI'm%20interested%20in%20connecting%20with%20you%20regarding%20recruitment%20opportunities%20and%20services.%0A%0APlease%20let%20me%20know%20a%20convenient%20time%20to%20discuss.%0A%0AThank%20you."
+              href="https://wa.me/?text=Hello%20Visconto%20Group%20Team%2C%0A%0AI'm%20interested%20in%20connecting%20with%20you%20regarding%20recruitment%20opportunities%20and%20services.%0A%0APlease%20let%20me%20know%20a%20convenient%20time%20to%20discuss.%0A%0AThank%20you."
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Chat with Visconto Group on WhatsApp"
@@ -114,7 +114,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom Bar */}
-      <div className="relative z-10 max-w-7xl mx-auto mt-12 border-t border-gray-700 pt-5 text-left text-xs text-gray-500">
+      <div className="relative z-10 max-w-7xl mx-auto mt-12 border-t border-gray-700 pt-5 text-left lg:text-center text-xs text-gray-500">
         © {new Date().getFullYear()} Visconto Group Inc. All rights reserved.
       </div>
 

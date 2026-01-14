@@ -12,7 +12,7 @@ export default function Services() {
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.2 }}
-        className="mt-8">
+        className="mt-[-30px]">
         <h2 className="text-4xl font-bold text-center text-gray-900 dark:text-white mb-8">
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-rose-500">Services We Offer</span>
         </h2>
@@ -54,7 +54,7 @@ export default function Services() {
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="max-w-[85rem] mx-auto mt-16 space-y-3"
+        className="max-w-[85rem] mx-auto mt-12 space-y-3"
       >
         {[
           {
@@ -95,14 +95,10 @@ export default function Services() {
                 <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
                   {item.title}
                 </h3>
-                {/* <span className="text-sm opacity-60 group-open:rotate-180 transition">
-                  ↓
-                </span> */}
                 <FontAwesomeIcon
                   icon={faChevronDown}
                   className="text-sm text-slate-500 transition-transform duration-300 group-open:rotate-180"
                 />
-
               </summary>
 
               <motion.div
@@ -122,19 +118,16 @@ export default function Services() {
           ))}
       </motion.div>
 
-
-
       {/* Candidate Section */}
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.2 }}
-        className="mt-10 text-center pb-20"
+        className="mt-8 text-center pb-15"
       >
-        <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
+        <h2 className="text-4xl font-bold text-gray-900 dark:text-white">
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-rose-500">For Candidates</span>
         </h2>
-        {/* <h3 className="text-3xl font-semibold">For Candidates</h3> */}
         <p className="mt-3 max-w-3xl mx-auto text-left sm:text-center text-slate-600 dark:text-slate-300 leading-relaxed">
           We partner with professionals seeking meaningful career opportunities — not just contracts.
         </p>

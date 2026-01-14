@@ -107,9 +107,9 @@ export default function About() {
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="text-center"
+        className="text-center mt-12"
       >
-        <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
+        <h2 className="text-4xl font-bold text-gray-900 dark:text-white">
           About <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-rose-500">Visconto Group Inc.</span>
         </h2>
         <p className="mt-3 max-w-4xl mx-auto text-left sm:text-center text-gray-700 dark:text-gray-300 text-lg leading-relaxed">
@@ -121,7 +121,7 @@ export default function About() {
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.2 }}
-        className="grid md:grid-cols-2 gap-20 max-w-[70rem] mx-auto mt-16"
+        className="grid md:grid-cols-2 gap-20 max-w-[70rem] mx-auto mt-10"
       >
         <motion.div
           whileHover={{ scale: 1.03 }}
@@ -172,8 +172,8 @@ export default function About() {
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="mt-12 max-w-4xl mx-auto text-center" id="talent">
-        <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
+        className="mt-10 max-w-4xl mx-auto text-center" id="talent">
+        <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-2">
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-rose-500">A Word About Our Talent</span>
         </h2>
         <p className="mt-3 max-w-4xl mx-auto text-left sm:text-center text-slate-700 dark:text-slate-300 leading-relaxed">
@@ -192,12 +192,12 @@ export default function About() {
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="mt-12 text-center mb-10"
+        className="mt-10 text-center mb-10"
         id="contact"
       >
-        <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
+        <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-3">
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-rose-500">
-            Let’s Build Something Great.
+            Let’s Build Something Great
           </span>
         </h2>
 
