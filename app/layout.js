@@ -10,7 +10,7 @@ const poppins = Poppins({
 
 /** ✅ Metadata – browsers + Google + Edge/Bing all compatible */
 export const metadata = {
-  title: "Omnireach Technology",
+  title: "Visconto Group",
   icons: {
     icon: "/favicon.ico",              // primary (MOST IMPORTANT)
     apple: "/apple-touch-icon.png",    // iOS safe
