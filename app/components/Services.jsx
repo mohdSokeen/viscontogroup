@@ -128,7 +128,7 @@ export default function Services() {
         <h2 className="text-4xl font-bold text-gray-900 dark:text-white">
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-rose-500">For Candidates</span>
         </h2>
-        <p className="mt-3 max-w-3xl mx-auto text-left sm:text-center text-slate-600 dark:text-slate-300 leading-relaxed">
+        <p className="mt-3 max-w-[85rem] mx-auto text-left sm:text-center text-slate-600 dark:text-slate-300 leading-relaxed">
           We partner with professionals seeking meaningful career opportunities — not just contracts.
         </p>
 

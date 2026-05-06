@@ -13,7 +13,7 @@ export default function Home() {
         <div className="absolute -right-32 -bottom-32 w-[55vw] h-[55vw] rounded-full filter blur-3xl opacity-60 animate-blob animation-delay-2000 bg-gradient-to-br from-emerald-300 via-teal-400 to-cyan-500" />
       </div>
 
-      <div className="max-w-[75rem] mx-auto px-6 lg:px-10">
+      <div className="max-w-[90rem] mx-auto px-6 lg:px-10">
         {/* HERO */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <motion.div
@@ -36,7 +36,7 @@ export default function Home() {
               delays, risk, or overhead.
             </p>
 
-            <div className="flex justify-center">
+            <div className="flex justify-left">
               <a
                 href="https://mail.google.com/mail/?view=cm&fs=1&to=hr@viscontogroup.com&su=Recruitment%20Inquiry&body=Hello%20Visconto%20Group%20Team%2C%0D%0A%0D%0AI%20would%20like%20to%20connect%20with%20you%20regarding%20recruitment%20opportunities%20and%20services.%0D%0A%0D%0APlease%20let%20me%20know%20a%20convenient%20time%20to%20discuss.%0D%0A%0D%0AThank%20you%2C%0D%0A%5BYour%20Name%5D"
                 target="_blank"
@@ -55,11 +55,11 @@ export default function Home() {
             transition={{ duration: 0.7 }}
             className="relative flex items-center justify-center"
           >
-            <div className="w-full max-w-md lg:max-w-lg">
+            <div className="w-full max-w-lg lg:max-w-[40rem]">
               <div className="rounded-3xl p-1 bg-white/30 dark:bg-black/30 backdrop-blur-xl border border-white/10 shadow-2xl">
                 <div className="rounded-2xl overflow-hidden bg-gradient-to-br from-white/40 to-white/10 dark:from-[#071018] dark:to-[#09131d]">
                   <div className="p-2 sm:p-2">
-                    <div className="relative h-64 sm:h-85 rounded-xl overflow-hidden">
+                    <div className="relative rounded-xl overflow-hidden">
 
                       {/* Image Tag */}
                       <img
