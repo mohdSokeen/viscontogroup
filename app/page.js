@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import Services from "./components/Services";
 import Navigation from "./components/Navigation";
 import Testimonial from "./components/Testimonial";
+import PrivacyPolicy from "./components/PrivacyPolicy";
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
         <Home />
         <Services />
         <Testimonial/>
+        <PrivacyPolicy/>
         <About />
         <Footer/>   
     </div>

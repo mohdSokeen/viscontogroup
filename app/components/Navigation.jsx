@@ -55,6 +55,11 @@ export default function Navigation() {
               <span className="absolute left-0 -bottom-1 h-[2px] w-full bg-gradient-to-r from-indigo-500 to-rose-500 scale-x-0 group-hover:scale-x-100 transition-transform origin-left" />
             </a>
 
+            <a href="#privacy-policy" className="relative group opacity-70 font-bold">
+              Privacy Policy
+              <span className="absolute left-0 -bottom-1 h-[2px] w-full bg-gradient-to-r from-indigo-500 to-rose-500 scale-x-0 group-hover:scale-x-100 transition-transform origin-left" />
+            </a>
+
             <a href="#about" className="relative group opacity-70 font-bold">
               About
               <span className="absolute left-0 -bottom-1 h-[2px] w-full bg-gradient-to-r from-indigo-500 to-rose-500 scale-x-0 group-hover:scale-x-100 transition-transform origin-left" />
