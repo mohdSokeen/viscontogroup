@@ -106,7 +106,7 @@ export default function About() {
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
+        transition={{ duration: 0.6, delay: 0.2 }}
         className="text-center mt-12"
       >
         <h2 className="text-4xl font-bold text-gray-900 dark:text-white">
@@ -235,23 +235,23 @@ export default function About() {
                   alt="client logo"
                   className={`opacity-70 hover:opacity-100 transition 
                   ${logo.name.includes("Marriott")
-                  ? "h-16 md:h-20 scale-125 md:scale-150"
-                  : logo.name.includes("EigenX")
-                  ? "h-16 md:h-20 scale-75 md:scale-80"
-                  : logo.name.includes("SG")
-                  ? "h-16 md:h-20 scale-75 md:scale-85"
-                  : logo.name.includes("Scrum_Alliance")
-                  ? "h-16 md:h-20 scale-75 md:scale-80"
-                  : logo.name.includes("SMBC")
-                  ? "h-16 md:h-20 scale-75 md:scale-80"
-                  : logo.name.includes("NYS_Attorney_General")
-                  ? "h-16 md:h-20 scale-75 md:scale-80"
-                  : logo.name.includes("Amalgamated_Life")
-                  ? "h-16 md:h-20 scale-75 md:scale-80"
-                  : logo.name.includes("TXO_Partners")
-                  ? "h-16 md:h-20 scale-75 md:scale-80"
-                  : "h-10 md:h-12"
-                  }`}
+                      ? "h-16 md:h-20 scale-125 md:scale-150"
+                      : logo.name.includes("EigenX")
+                        ? "h-16 md:h-20 scale-75 md:scale-80"
+                        : logo.name.includes("SG")
+                          ? "h-16 md:h-20 scale-75 md:scale-85"
+                          : logo.name.includes("Scrum_Alliance")
+                            ? "h-16 md:h-20 scale-75 md:scale-80"
+                            : logo.name.includes("SMBC")
+                              ? "h-16 md:h-20 scale-75 md:scale-80"
+                              : logo.name.includes("NYS_Attorney_General")
+                                ? "h-16 md:h-20 scale-75 md:scale-80"
+                                : logo.name.includes("Amalgamated_Life")
+                                  ? "h-16 md:h-20 scale-75 md:scale-80"
+                                  : logo.name.includes("TXO_Partners")
+                                    ? "h-16 md:h-20 scale-75 md:scale-80"
+                                    : "h-10 md:h-12"
+                    }`}
                 />
               </div>
             ))}
